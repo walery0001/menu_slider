@@ -1,0 +1,99 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+body{
+	min-height: 100vh;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	position: relative;
+	height: 100vh;
+}
+/* tooooooooop naaaaaaaaaaaav start*/
+.topNav{
+	background-color: slateblue;
+	height: auto;
+}
+.btnTop{
+	text-align: right;
+}
+.fas{
+	font-size: 3rem;
+	color:whitesmoke;
+	margin:20px;
+}
+.fas:hover{
+	color:violet;
+	cursor: pointer;
+}
+.fas:active{
+	font-size: 3.1rem;
+}
+.topUl{
+	font-size: 1.8rem;
+	width: 100%;
+	height: 0;
+	transition: all 2s ease;
+}
+.showTopUl{
+	height: 200px;
+	transition: all 3.5s ease;
+}
+.topLi{
+	/* border-bottom: 1px solid tomato; */
+	padding-right:20px;
+	text-align: right;
+	height: 50px;
+}
+/* .topLi:first-child{
+	border-top:1px solid tomato ;
+} */
+.topLi:hover{
+	background-color: tomato;
+	padding-right: 30px;
+	transition: all 1.5s ease;
+}
+
+.topLi a{
+	color: whitesmoke;
+	vertical-align: middle;
+}
+/* leeeeeeeefffft naaaaaaaaaaaav start*/
+.leftNav{
+	position: absolute;
+	z-index: 50;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0 , .8);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+}
+.leftUl{
+	background-color: darkslateblue;
+	list-style: none;
+	font-size: 1.5rem;
+	max-width: 30%;
+	width: 400px;
+	height: 100%;
+
+}
+.leftLi{
+	padding: 15px;
+	border-bottom: 1px solid tomato; 
+	
+}
+.leftLi a{
+	color: whitesmoke;
+	padding-left: 10px;
+}
+.showLeftNav{
+transform: translate(100%);	
+}
