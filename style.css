@@ -14,7 +14,9 @@ a{
 .container{
 	position: relative;
 	height: 100vh;
-}
+	overflow: auto;
+	}
+	
 /* tooooooooop naaaaaaaaaaaav start*/
 .topNav{
 	background-color: slateblue;
