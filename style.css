@@ -1,11 +1,9 @@
-:root {
-	--modal-duration: 1s;
-  }
+
 *{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 body{
 	min-height: 100vh;
@@ -128,3 +126,95 @@ padding-left: 10px;
 	  font-size: 1.2rem;
 	  margin: 10px;
   }
+
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	min-height: 100vh;
+	transition: transform 0.3s ease;
+}
+nav{
+	background-color: #22930b;
+	color: #fff;
+	position: fixed;
+	width: 300px;
+	border-right: 2px solid rgba(200,200,200,.1);
+	top: 0;
+	left: 0;
+	height: 100vh;
+	z-index: 100;
+	transform: translate(-100%);
+}
+body.show{
+transform: translate(300px);
+}
+nav .logo{
+	padding: 30px 0;
+	text-align: center;
+}
+nav .logo img{
+width: 90px;
+height: 90px;
+}
+nav ul{
+	list-style: none;
+}
+nav ul li{
+	border-bottom: 2px solid rgba(200,200,200,.1);
+	padding: 20px;
+}
+
+nav ul li:first-of-type{
+	border-top: 2px solid rgba(200,200,200,.1);
+}
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+header{
+background-color: #22930b;
+color: #fff;
+text-align: center;
+padding: 10px 0;
+position: relative;
+}
+
+.toggle{
+	position: absolute;
+	left: 20px;
+
+}
+
+.container{
+	max-width: 100%;
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px;
+}
+.toggleContainer{
+	background-color: rgba(0,0,0,.7);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: fixed;
+	display:none
+}
+.toggleSwitch{
+	background-color: #fff;
+	overflow: hidden;
+	max-width: 100%;
+	width:400px;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,0%);
+	position: absolute;
+}
+.showToggle{
+	display: block;
+}
+
+
+
